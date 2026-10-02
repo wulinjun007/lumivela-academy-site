@@ -1,0 +1,4 @@
+.netlify/
+qa/server.log
+qa/qa/
+.DS_Store

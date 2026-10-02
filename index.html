@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>光帆数艺 LUMIVELA ACADEMY · 数字艺术教育（设计演示站）</title>
+<meta name="description" content="光帆数艺：AI设计、游戏设计、影视后期、UI设计、插画原画、空间室内四大学院 16 门主力课程，五城直营校区，项目制教学。本站为设计演示站点。">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="index">
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="光帆数艺 首页">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__cn">光帆数艺</span>
+      <span class="brand__en">LUMIVELA ACADEMY</span>
+    </a>
+    <nav class="nav__menu" id="navMenu" aria-label="主导航">
+      <div class="nav__item" id="megaItem">
+        <button class="nav__link" id="megaBtn" aria-expanded="false" aria-haspopup="true">课程导航 <i data-icon="chev"></i></button>
+        <div class="mega" id="megaMenu" role="menu" aria-label="课程分类导航"><!-- main.js 渲染 --></div>
+      </div>
+      <a class="nav__link" data-nav="courses" href="courses.html">精品课程</a>
+      <a class="nav__link" data-nav="teachers" href="teachers.html">师资力量</a>
+      <a class="nav__link" data-nav="works" href="works.html">学员作品</a>
+      <a class="nav__link" data-nav="employment" href="employment.html">学员就业</a>
+      <a class="nav__link" data-nav="campus" href="campus.html">全国校区</a>
+      <a class="nav__link" data-nav="news" href="news.html">学院动态</a>
+      <a class="nav__link" data-nav="about" href="about.html">关于我们</a>
+      <a class="nav__link is-hot" href="index.html#free">免费课 <span class="hot-dot" aria-hidden="true"></span></a>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__phone" href="tel:4006600102"><i data-icon="phone"></i>400-660-0102</a>
+      <button class="btn btn--dark" type="button" data-consult-open>预约咨询</button>
+      <button class="nav__burger" id="navBurger" aria-expanded="false" aria-label="打开菜单"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="page-veil" id="pageVeil" aria-hidden="true"></div>
+
+<main>
+<!-- 首页轮播 -->
+<section class="hero-carousel" id="heroCarousel" aria-label="精选推荐">
+  <div class="hero-track" id="heroTrack">
+
+    <div class="hero-slide">
+      <div class="hero-slide__art">
+        <div class="hero-slide__inner">
+          <span class="hero-kicker"><i></i>2026 秋季班 · 报名开启</span>
+          <h1>把热爱，做成能吃饭的手艺</h1>
+          <p class="lede">AI 设计 · 游戏美术 · 影视后期 · UI · 插画 · 空间——四大学院 16 门主力课程，全部按真实商业项目组织教学。</p>
+          <div class="hero-ctas">
+            <button class="btn btn--deep" type="button" data-consult-open>领取学习路径 <span class="btn__badge"><i data-icon="arrow"></i></span></button>
+            <a class="btn btn--ghost-w" href="courses.html">浏览精品课程</a>
+          </div>
+        </div>
+        <div class="hero-figure" aria-hidden="true">
+          <i data-icon="spark" style="color:#fff"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide hero-slide--olive">
+      <div class="hero-slide__art">
+        <div class="hero-slide__inner">
+          <span class="hero-kicker"><i></i>四大学院 · 16 门主力课程</span>
+          <h1>在真实项目里，学真本事</h1>
+          <p class="lede">厂商实训工单、院线级制作规范、可上线的小游戏——结业作品直接进简历，而不是留在硬盘里。</p>
+          <div class="hero-ctas">
+            <a class="btn btn--deep" href="#academies">看看四大学院 <span class="btn__badge"><i data-icon="arrow"></i></span></a>
+            <a class="btn btn--ghost-w" href="works.html">学员作品</a>
+          </div>
+        </div>
+        <div class="hero-figure" aria-hidden="true">
+          <i data-icon="pad" style="color:#fff"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide hero-slide--ink">
+      <div class="hero-slide__art">
+        <div class="hero-slide__inner">
+          <span class="hero-kicker"><i></i>北京 · 上海 · 广州 · 杭州 · 成都</span>
+          <h1>五城直营校区，导师面对面带练</h1>
+          <p class="lede">全职讲师驻场，讲师 + 助教双辅导；支持预约参观与免费试听，先上课，再决定。</p>
+          <div class="hero-ctas">
+            <a class="btn btn--deep" href="campus.html">预约参观校区 <span class="btn__badge"><i data-icon="arrow"></i></span></a>
+            <a class="btn btn--ghost-w" href="teachers.html">认识导师团队</a>
+          </div>
+        </div>
+        <div class="hero-figure" aria-hidden="true">
+          <i data-icon="home" style="color:#fff"></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <button class="hero-nav-btn hero-nav-btn--prev" id="heroPrev" aria-label="上一张"><i data-icon="left"></i></button>
+  <button class="hero-nav-btn hero-nav-btn--next" id="heroNext" aria-label="下一张"><i data-icon="right"></i></button>
+  <div class="hero-dots" role="tablist" aria-label="轮播分页">
+    <button class="hero-dot is-active" aria-label="第 1 张"></button>
+    <button class="hero-dot" aria-label="第 2 张"></button>
+    <button class="hero-dot" aria-label="第 3 张"></button>
+  </div>
+</section>
+
+<!-- 快捷入口 -->
+<section class="quickbar" aria-label="快捷入口">
+  <div class="container quickbar__inner">
+    <a class="quickbar__item" href="#free">
+      <span class="quickbar__icon quickbar__icon--olive"><i data-icon="play"></i></span>
+      <span><b>免费公开课</b><span>12 门 · 每周更新</span></span>
+    </a>
+    <a class="quickbar__item" href="courses.html">
+      <span class="quickbar__icon"><i data-icon="book"></i></span>
+      <span><b>全部课程</b><span>6 大方向 · 16 门主力课</span></span>
+    </a>
+    <a class="quickbar__item" href="campus.html">
+      <span class="quickbar__icon"><i data-icon="home"></i></span>
+      <span><b>预约参观</b><span>五城校区 · 免费试听</span></span>
+    </a>
+    <button class="quickbar__item" type="button" data-consult-open style="border:none;font:inherit;color:inherit;background:none;text-align:left">
+      <span class="quickbar__icon quickbar__icon--deep"><i data-icon="msg"></i></span>
+      <span><b>课程规划咨询</b><span>1 对 1 · 30 分钟响应</span></span>
+    </button>
+  </div>
+</section>
+
+<!-- 数据 -->
+<section class="stats" aria-label="办学数据">
+  <div class="container stats__inner">
+    <div class="stat"><b><span data-count="12">0</span><i>年</i></b><span>数字艺术教育深耕</span></div>
+    <div class="stat"><b><span data-count="3200">0</span><i>+</i></b><span>同期在读学员</span></div>
+    <div class="stat"><b><span data-count="9800">0</span><i>+</i></b><span>累计毕业学员</span></div>
+    <div class="stat"><b><span data-count="260">0</span><i>+</i></b><span>就业合作企业</span></div>
+    <div class="stat"><b><span data-count="120">0</span><i>+</i></b><span>全职导师团队</span></div>
+  </div>
+</section>
+
+<!-- 免费教程 -->
+<section class="section section--tint" id="free">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-eyebrow">FREE COURSES</span>
+        <h2 class="section-title">免费视频教程</h2>
+        <p class="section-desc">每周更新的公开课，先看看讲课风格，再决定报不报名。</p>
+      </div>
+      <a class="section-link" href="courses.html">查看全部课程 <i data-icon="arrow"></i></a>
+    </div>
+    <div class="tabs" data-tabs="lvRenderTutorials" role="tablist" aria-label="教程分类">
+      <button class="tab is-active" data-tab="最新" role="tab" aria-selected="true">最新</button>
+      <button class="tab" data-tab="推荐" role="tab" aria-selected="false">推荐</button>
+      <button class="tab" data-tab="AI设计" role="tab" aria-selected="false">AI 设计</button>
+      <button class="tab" data-tab="游戏设计" role="tab" aria-selected="false">游戏设计</button>
+      <button class="tab" data-tab="影视后期" role="tab" aria-selected="false">影视后期</button>
+      <button class="tab" data-tab="UI设计" role="tab" aria-selected="false">UI 设计</button>
+      <button class="tab" data-tab="插画原画" role="tab" aria-selected="false">插画原画</button>
+      <button class="tab" data-tab="空间室内" role="tab" aria-selected="false">空间室内</button>
+    </div>
+    <div class="tutorial-grid" id="tutorialGrid"><!-- main.js 渲染 --></div>
+  </div>
+</section>
+
+<!-- 四大学院 -->
+<section class="section" id="academies">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-eyebrow">ACADEMIES</span>
+        <h2 class="section-title">四大学院 · <strong>按职业方向组织课程</strong></h2>
+        <p class="section-desc">每个学院对应一条完整的就业管线，课程之间可自由衔接进阶。</p>
+      </div>
+      <a class="section-link" href="courses.html">全部课程 <i data-icon="arrow"></i></a>
+    </div>
+  </div>
+
+  <div class="container reveal" style="margin-bottom:56px">
+    <div class="academy-head">
+      <span class="academy-no">01</span>
+      <div style="flex:1;min-width:0">
+        <h3>AI 与视觉设计学院 <span class="en">AI &amp; VISUAL DESIGN</span></h3>
+        <p>以 AIGC 工作流为核心，把生成式 AI 变成设计师手里最顺手的工具。</p>
+      </div>
+      <a class="section-link" href="courses.html?cat=AI设计">该学院课程 <i data-icon="arrow"></i></a>
+    </div>
+    <div class="course-grid" id="academy-ai"></div>
+  </div>
+
+  <div class="container reveal" style="margin-bottom:56px">
+    <div class="academy-head">
+      <span class="academy-no">02</span>
+      <div style="flex:1;min-width:0">
+        <h3>游戏设计学院 <span class="en">GAME DESIGN</span></h3>
+        <p>从原画到引擎，覆盖游戏美术与玩法设计全链路，做出能进简历的完整作品。</p>
+      </div>
+      <a class="section-link" href="courses.html?cat=游戏设计">该学院课程 <i data-icon="arrow"></i></a>
+    </div>
+    <div class="course-grid" id="academy-game"></div>
+  </div>
+
+  <div class="container reveal" style="margin-bottom:56px">
+    <div class="academy-head">
+      <span class="academy-no">03</span>
+      <div style="flex:1;min-width:0">
+        <h3>影视与动效学院 <span class="en">FILM &amp; MOTION</span></h3>
+        <p>剪辑、合成、特效三维推进，用真实项目训练工业化制作流程。</p>
+      </div>
+      <a class="section-link" href="courses.html?cat=影视后期">该学院课程 <i data-icon="arrow"></i></a>
+    </div>
+    <div class="course-grid" id="academy-film"></div>
+  </div>
+
+  <div class="container reveal">
+    <div class="academy-head">
+      <span class="academy-no">04</span>
+      <div style="flex:1;min-width:0">
+        <h3>空间与体验学院 <span class="en">SPACE &amp; EXPERIENCE</span></h3>
+        <p>室内、界面与商业插画并行的视觉表达学院，训练从概念到落地的完整能力。</p>
+      </div>
+      <a class="section-link" href="courses.html">该学院课程 <i data-icon="arrow"></i></a>
+    </div>
+    <div class="course-grid" id="academy-space"></div>
+  </div>
+</section>
+
+<!-- 师资 -->
+<section class="section section--tint">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-eyebrow">MENTORS</span>
+        <h2 class="section-title">全职导师团队</h2>
+        <p class="section-desc">总监级主讲 + 专职助教双辅导，行业经验 8–15 年，只教自己做过的项目。</p>
+      </div>
+      <a class="section-link" href="teachers.html">全部导师 <i data-icon="arrow"></i></a>
+    </div>
+    <div class="teacher-grid" id="teacherGridHome"><!-- main.js 渲染 4 位 --></div>
+  </div>
+</section>
+
+<!-- 学员作品 -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-eyebrow">WORKS</span>
+        <h2 class="section-title">学员结业作品</h2>
+        <p class="section-desc">每个作品都按商业规格交付：有需求文档、有修改记录、有上线结果。</p>
+      </div>
+      <a class="section-link" href="works.html">作品库 <i data-icon="arrow"></i></a>
+    </div>
+    <div class="works-grid" id="worksGrid"><!-- main.js 渲染 --></div>
+  </div>
+</section>
+
+<!-- 就业服务 -->
+<section class="section section--deep">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-eyebrow">CAREER SERVICE</span>
+        <h2 class="section-title">结业前 1 个月，就业服务启动</h2>
+        <p class="section-desc">不承诺“包就业”，但每一个环节都真实做：简历、面试、双选会、入职随访。</p>
+      </div>
+      <a class="section-link" href="employment.html">就业服务详情 <i data-icon="arrow"></i></a>
+    </div>
+    <div class="flow-grid reveal">
+      <div class="flow-card"><span class="tag">1 对 1</span><h3>作品集与简历打磨</h3><p>导师逐页过作品，按目标岗位重排叙事顺序，砍掉“看起来很忙”的废页。</p></div>
+      <div class="flow-card"><span class="tag">3 轮</span><h3>模拟面试</h3><p>技术面 + 项目面 + HR 面全真演练，录音回放复盘每一句回答。</p></div>
+      <div class="flow-card"><span class="tag">双选会</span><h3>双选会与内推</h3><p>每届两场线下双选会，62 家企业到场；合作企业内推通道全年开放。</p></div>
+      <div class="flow-card"><span class="tag">90 天</span><h3>入职随访</h3><p>入职后 90 天内导师持续跟进，第一份工作的问题随时回来问。</p></div>
+    </div>
+    <p class="section-desc" style="margin:44px 0 18px;text-align:center;color:rgba(255,255,255,.5);max-width:none">就业合作企业（部分，演示数据）</p>
+    <div class="eco-pills reveal">
+      <span>白泽互娱</span><span>星岩游戏</span><span>拾光影业</span><span>青梧科技</span><span>远山动画</span><span>九野网络</span><span>观澜传媒</span><span>临风影业</span><span>未末工作室</span><span>鲸屿互动</span>
+    </div>
+  </div>
+</section>
+
+<!-- 校区 -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-eyebrow">CAMPUSES</span>
+        <h2 class="section-title">五城直营校区</h2>
+        <p class="section-desc">支持预约参观、随堂试听；外地学员可先约线上 1 对 1 方向规划。</p>
+      </div>
+      <a class="section-link" href="campus.html">校区详情 <i data-icon="arrow"></i></a>
+    </div>
+    <div class="city-tab-row" id="cityTabs"><!-- main.js 渲染 --></div>
+    <div class="campus-panel">
+      <div class="campus-info" id="campusInfo"></div>
+      <div class="campus-gallery" id="campusGallery"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 新闻 -->
+<section class="section section--tint">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-eyebrow">NEWS</span>
+        <h2 class="section-title">学院动态</h2>
+      </div>
+      <a class="section-link" href="news.html">全部动态 <i data-icon="arrow"></i></a>
+    </div>
+    <div class="news-grid" id="newsGrid"><!-- main.js 渲染 --></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" style="justify-content:center;text-align:center">
+      <div style="margin:0 auto">
+        <span class="section-eyebrow" style="justify-content:center">FAQ</span>
+        <h2 class="section-title">报名前，最常被问到的 6 件事</h2>
+      </div>
+    </div>
+    <div class="faq-list" id="faqList"><!-- main.js 渲染 --></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-band" style="padding-top:0">
+  <div class="container">
+    <div class="cta-band__inner reveal">
+      <h2>先上一节免费公开课，再决定。</h2>
+      <p>留下你的方向，课程顾问会把课表、学费明细和学习路径一起发给你。</p>
+      <div class="cta-band__ctas">
+        <button class="btn btn--deep" type="button" data-consult-open>免费领取学习路径 <span class="btn__badge"><i data-icon="arrow"></i></span></button>
+        <a class="btn btn--ghost-w" href="courses.html">浏览全部课程</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__cn">光帆数艺</span>
+        <span class="brand__en">LUMIVELA ACADEMY</span>
+      </a>
+      <p>把热爱做成职业。<br>AI · 游戏 · 影视 · 视觉 · 空间，<br>在真实项目里学真本事。</p>
+    </div>
+    <div>
+      <h4>热门课程</h4>
+      <ul>
+        <li><a href="course.html?id=ai-aigc">AIGC 视觉设计全能班</a></li>
+        <li><a href="course.html?id=game-unreal">虚幻引擎场景美术班</a></li>
+        <li><a href="course.html?id=film-post">影视后期合成班</a></li>
+        <li><a href="course.html?id=ui-app">UI/UX 界面设计班</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>课程方向</h4>
+      <ul>
+        <li><a href="courses.html?cat=AI设计">AI 设计</a></li>
+        <li><a href="courses.html?cat=游戏设计">游戏设计</a></li>
+        <li><a href="courses.html?cat=影视后期">影视后期</a></li>
+        <li><a href="courses.html?cat=UI设计">UI 设计</a></li>
+        <li><a href="courses.html?cat=插画原画">插画原画</a></li>
+        <li><a href="courses.html?cat=空间室内">空间室内</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>快速导航</h4>
+      <ul>
+        <li><a href="teachers.html">师资力量</a></li>
+        <li><a href="works.html">学员作品</a></li>
+        <li><a href="employment.html">学员就业</a></li>
+        <li><a href="campus.html">全国校区</a></li>
+        <li><a href="news.html">学院动态</a></li>
+        <li><a href="about.html">关于我们</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>联系我们</h4>
+      <ul class="footer__contact">
+        <li><i data-icon="phone"></i><span>咨询热线<br><b>400-660-0102</b>（演示数据）</span></li>
+        <li><i data-icon="mail"></i><span>hello@lumivela.demo</span></li>
+        <li><i data-icon="wechat"></i><span>公众号：光帆数艺（演示）</span></li>
+        <li><i data-icon="clock"></i><span>每日 9:00 – 21:00</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__note">
+    <span>© <span id="year">2026</span> 光帆数艺 LUMIVELA ACADEMY</span>
+    <span>本站为前端设计与开发演示站点：品牌、课程、师资、企业与联系方式均为虚构演示数据，不构成任何真实招生信息。</span>
+  </div>
+</footer>
+
+<button class="backtop" id="backtop" aria-label="返回顶部"><i data-icon="up"></i></button>
+
+<!-- 在线答疑浮窗 -->
+<button class="consult-fab" id="consultFab" aria-expanded="false" aria-controls="consultPanel">
+  <span class="dot" aria-hidden="true"></span><i data-icon="msg"></i>在线答疑
+</button>
+<div class="consult-panel" id="consultPanel" role="dialog" aria-label="在线答疑">
+  <div class="consult-panel__head">
+    <span class="bot"><i data-icon="bot"></i></span>
+    <div><b>光帆课程顾问</b><span>在线答疑 · 演示会话</span></div>
+    <button class="close" id="consultClose" aria-label="关闭答疑窗口"><i data-icon="x"></i></button>
+  </div>
+  <div class="consult-body">
+    <div class="consult-msg"><strong>你好，我是课程顾问小帆 👋</strong><br>选方向、看课表、估学费，都可以直接问我。</div>
+    <div class="consult-quick">
+      <button type="button">零基础能学吗？</button>
+      <button type="button">学费与分期</button>
+      <button type="button">就业服务</button>
+      <button type="button">预约参观校区</button>
+    </div>
+    <form class="consult-form" id="consultForm">
+      <textarea id="consultText" placeholder="输入你的问题…" aria-label="问题内容"></textarea>
+      <div class="consult-form__row">
+        <input type="tel" id="consultPhone" placeholder="你的手机号（演示，不会发送）" aria-label="手机号">
+        <button class="btn btn--deep" type="submit">发送</button>
+      </div>
+    </form>
+    <p class="consult-note">本站为设计演示站点：表单不会真实发送、不采集任何数据。正式站点将由真人顾问回访。</p>
+  </div>
+  <div class="consult-ok">
+    <i data-icon="check"></i>
+    <b>已收到你的问题（演示）</b>
+    <p>这是演示环境的本地反馈，没有发送任何数据。<br>正式站点中，课程顾问将在 30 分钟内回电。</p>
+  </div>
+</div>
+
+<!-- 模态 -->
+<div class="modal-veil" id="modalVeil" aria-hidden="true"><div class="modal" id="modalBox" role="dialog" aria-modal="true"></div></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
